@@ -1,0 +1,196 @@
+root
+ |-- key: binary (nullable = true)
+ |-- value: binary (nullable = true)
+ |-- topic: string (nullable = true)
+ |-- partition: integer (nullable = true)
+ |-- offset: long (nullable = true)
+ |-- timestamp: timestamp (nullable = true)
+ |-- timestampType: integer (nullable = true)
+
+-------------------------------------------
+Batch: 0
+-------------------------------------------
++------------------------+-----+
+|original_crime_type_name|count|
++------------------------+-----+
+|                 Prowler|    1|
+|                  22500f|    2|
+|                  Return|    1|
+|                     601|    4|
+|            Passing Call|    3|
+|            Person W/gun|    1|
+|          Meet W/citizen|    2|
+|         Fight No Weapon|    5|
+|      Suspicious Vehicle|    5|
+|      Auto Boost / Strip|    2|
+|                     518|    2|
+|              Loud Party|    1|
+|     H&r Injury Accident|    1|
+|                      Jo|    3|
+|                    Fire|    1|
+|     Injury Veh Accident|    1|
+|            Drunk Driver|    1|
+|          Meet W/officer|    1|
+|     Traf Violation Cite|    4|
+|        Person Screaming|    1|
++------------------------+-----+
+only showing top 20 rows
+
+-------------------------------------------
+Batch: 1
+-------------------------------------------
++------------------------+-----+
+|original_crime_type_name|count|
++------------------------+-----+
+|                  Heated|    1|
+|                 Prowler|    1|
+|              Aided Case|    2|
+|             Arrest Made|    2|
+|                  Return|    1|
+|                     601|    4|
+|            Passing Call|    3|
+|            Person W/gun|    1|
+|          Meet W/citizen|    4|
+|                     Rep|    1|
+|                  22500f|    2|
+|         Suicide Attempt|    1|
+|                 At Risk|    1|
+|         Fight No Weapon|    7|
+|                     917|    1|
+|      Suspicious Vehicle|    6|
+|      Auto Boost / Strip|    4|
+|                     518|    2|
+|                Reckless|    1|
+|       Agg Assault / Adw|    1|
++------------------------+-----+
+only showing top 20 rows
+
+-------------------------------------------
+Batch: 2
+-------------------------------------------
++------------------------+-----+
+|original_crime_type_name|count|
++------------------------+-----+
+|                 Prowler|    2|
+|                     910|    2|
+|                     909|    2|
+|                  Heated|    1|
+|            Squatter/916|    1|
+|              Aided Case|    2|
+|             Arrest Made|    2|
+|            Passing Call|    3|
+|                     Rep|    1|
+|                     853|    1|
+|                  22500f|    2|
+|         Suicide Attempt|    2|
+|                  Return|    2|
+|                     601|    5|
+|            Person W/gun|    1|
+|          Meet W/citizen|    5|
+|                 At Risk|    1|
+|         Fight No Weapon|    7|
+|                     917|    2|
+|      Auto Boost / Strip|    4|
++------------------------+-----+
+only showing top 20 rows
+
+-------------------------------------------
+Batch: 3
+-------------------------------------------
++------------------------+-----+
+|original_crime_type_name|count|
++------------------------+-----+
+|         Explosive Found|    1|
+|      Mentally Disturbed|    2|
+|              Aided Case|    2|
+|             Arrest Made|    2|
+|                 Prowler|    2|
+|                     910|    2|
+|                     909|    3|
+|                  Heated|    1|
+|            Squatter/916|    1|
+|            Passing Call|    3|
+|                    Susp|    1|
+|          Person W/knife|    1|
+|                     Rep|    3|
+|                     853|    1|
+|                  22500f|    3|
+|         Suicide Attempt|    2|
+|                   Drums|    1|
+|                     800|    1|
+|                  Return|    2|
+|                     601|    5|
++------------------------+-----+
+only showing top 20 rows
+
+-------------------------------------------
+Batch: 4
+-------------------------------------------
++------------------------+-----+
+|original_crime_type_name|count|
++------------------------+-----+
+|                  22654e|    1|
+|         Explosive Found|    1|
+|      Mentally Disturbed|    5|
+|              Aided Case|    2|
+|                     852|    1|
+|             Arrest Made|    3|
+|                 Prowler|    2|
+|                     910|    2|
+|                     909|    5|
+|              Threats Dv|    1|
+|                  Heated|    1|
+|            Squatter/916|    1|
+|                 Custody|    1|
+|            Passing Call|    3|
+|                    Susp|    2|
+|          Person W/knife|    2|
+|                     Rep|    3|
+|                     853|    1|
+|                  22500f|    4|
+|         Suicide Attempt|    2|
++------------------------+-----+
+only showing top 20 rows
+
+-------------------------------------------
+Batch: 5
+-------------------------------------------
++------------------------+-----+
+|original_crime_type_name|count|
++------------------------+-----+
+|         Explosive Found|    1|
+|      Mentally Disturbed|    6|
+|                     852|    1|
+|             Arrest Made|    3|
+|                 Prowler|    2|
+|                     910|    2|
+|                     909|    6|
+|              Threats Dv|    1|
+|                  Heated|    1|
+|                 Custody|    2|
+|                  22654e|    1|
+|              Aided Case|    2|
+|          Person Dumping|    1|
+|            Squatter/916|    1|
+|            Passing Call|    3|
+|                    Susp|    2|
+|          Person W/knife|    2|
+|                     Rep|    5|
+|                     853|    1|
+|                  22500f|    4|
++------------------------+-----+
+only showing top 20 rows
+
+Traceback (most recent call last):
+  File "/vagrant/udacity_spark/data_stream.py", line 109, in <module>
+    run_spark_job(spark)
+  File "/vagrant/udacity_spark/data_stream.py", line 76, in run_spark_job
+    query.awaitTermination()
+  File "/opt/spark-2.4.3-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/sql/streaming.py", line 103, in awaitTermination
+  File "/opt/spark-2.4.3-bin-hadoop2.7/python/lib/py4j-0.10.7-src.zip/py4j/java_gateway.py", line 1255, in __call__
+  File "/opt/spark-2.4.3-bin-hadoop2.7/python/lib/py4j-0.10.7-src.zip/py4j/java_gateway.py", line 985, in send_command
+  File "/opt/spark-2.4.3-bin-hadoop2.7/python/lib/py4j-0.10.7-src.zip/py4j/java_gateway.py", line 1152, in send_command
+  File "/home/vagrant/anaconda2/lib/python2.7/socket.py", line 451, in readline
+    data = self._sock.recv(self._rbufsize)
+  File "/opt/spark-2.4.3-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/context.py", line 270, in signal_handler
+KeyboardInterrupt

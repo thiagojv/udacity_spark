@@ -31,8 +31,23 @@ spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.4.5 --maste
 
 ### Questions
 
-How did changing values on the SparkSession property parameters affect the throughput and latency of the data?
+1 - How did changing values on the SparkSession property parameters affect the throughput and latency of the data?
 
-Setting `maxRatePerPartition` to 100, incresead `processedRowsPerSecond` from 36 to 175
+| id | spark.default.parallelism | spark.sql.shuffle.partitions | processedRowsPerSecond | inputRowsPerSecond |
+| -: | ------------------------: | ---------------------------: | ---------------------: | -----------------: |
+|  1 |                         2 |                            1 |                     13 |                  1 |
+|  2 |                        10 |                            1 |                    248 |                 23 |
+|  3 |                        10 |                           10 |                    121 |                 25 |
+|  4 |                        10 |                           20 |                     82 |                 23 |
+|  5 |                        20 |                           10 |                    125 |                 22 |
 
-What were the 2-3 most efficient SparkSession property key/value pairs? Through testing multiple variations on values, how can you tell these were the most optimal?
+Increasing parallelism to 10 gets a higher throughput with 248 rows/sec.
+Increasing partitions to 10 get the lowest latency with 25 rows processed per second.
+Increasing more parallelism or partitions, like to 20, decreased both throughput and latency.
+
+
+2 - What were the 2-3 most efficient SparkSession property key/value pairs? Through testing multiple variations on values, how can you tell these were the most optimal?
+
+In this case, the most optimal results I get was in test 2 where I get the higher throughput and the second higher latency.
+spark.default.parallelism = 10
+spark.sql.shuffle.partitions = 1

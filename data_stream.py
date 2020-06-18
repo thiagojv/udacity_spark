@@ -34,7 +34,6 @@ def run_spark_job(spark):
         .option("subscribe", "com.udacity.sfpd.calls") \
         .option("startingOffsets", "earliest") \
         .option("maxOffsetsPerTrigger", 200) \
-        .option('maxRatePerPartition', 100) \
         .option("stopGracefullyOnShutdown", True) \
         .load()
 
@@ -101,8 +100,8 @@ if __name__ == "__main__":
         .appName("Udacity - SF Crime Report") \
         .getOrCreate()
 
-    spark.conf.set("spark.default.parallelism", "2")
-    spark.conf.set("spark.sql.shuffle.partitions", "1")
+    spark.conf.set("spark.default.parallelism", "1000")
+    spark.conf.set("spark.sql.shuffle.partitions", "1000")
 
     logger.info("Spark started")
 

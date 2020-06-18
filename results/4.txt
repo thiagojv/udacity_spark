@@ -1,0 +1,225 @@
+root
+ |-- key: binary (nullable = true)
+ |-- value: binary (nullable = true)
+ |-- topic: string (nullable = true)
+ |-- partition: integer (nullable = true)
+ |-- offset: long (nullable = true)
+ |-- timestamp: timestamp (nullable = true)
+ |-- timestampType: integer (nullable = true)
+
+-------------------------------------------
+Batch: 0
+-------------------------------------------
++------------------------+-----+
+|original_crime_type_name|count|
++------------------------+-----+
+|                  22500f|    2|
+|                  Return|    1|
+|                     601|    4|
+|            Passing Call|    3|
+|            Person W/gun|    1|
+|          Meet W/citizen|    2|
+|      Auto Boost / Strip|    2|
+|     H&r Injury Accident|    1|
+|                      Jo|    3|
+|                    Fire|    1|
+|     Traf Violation Cite|    4|
+|        Person Screaming|    1|
+|       Assault / Battery|    4|
+|      Traf Violation Tow|    2|
+|              Trespasser|    1|
+|      Homeless Complaint|    1|
+|             Petty Theft|    1|
+|                  22500e|    1|
+|            Silent Alarm|    1|
+|                   Party|    1|
++------------------------+-----+
+only showing top 20 rows
+
+-------------------------------------------
+Batch: 1
+-------------------------------------------
++------------------------+-----+
+|original_crime_type_name|count|
++------------------------+-----+
+|              Aided Case|    2|
+|                  Return|    1|
+|                     601|    4|
+|            Passing Call|    3|
+|            Person W/gun|    1|
+|          Meet W/citizen|    5|
+|                     Rep|    1|
+|                  22500f|    2|
+|         Suicide Attempt|    1|
+|      Auto Boost / Strip|    4|
+|                Reckless|    1|
+|     H&r Injury Accident|    1|
+|             Pay Dispute|    1|
+|                      Jo|    4|
+|                    Fire|    1|
+|       Indecent Exposure|    1|
+|        Person Screaming|    1|
+|          Complaint Unkn|    1|
+|                Poss Rep|    1|
+|     Traf Violation Cite|    5|
++------------------------+-----+
+only showing top 20 rows
+
+-------------------------------------------
+Batch: 2
+-------------------------------------------
++------------------------+-----+
+|original_crime_type_name|count|
++------------------------+-----+
+|                     910|    2|
+|              Aided Case|    2|
+|                     909|    2|
+|                  Return|    2|
+|                     601|    5|
+|            Passing Call|    3|
+|            Person W/gun|    1|
+|          Meet W/citizen|    5|
+|                     Rep|    2|
+|                     853|    1|
+|                  22500f|    2|
+|         Suicide Attempt|    2|
+|      Auto Boost / Strip|    4|
+|                Reckless|    1|
+|     H&r Injury Accident|    1|
+|             Pay Dispute|    1|
+|                      Jo|    4|
+|                    Fire|    1|
+|                245 Poss|    1|
+|       Indecent Exposure|    1|
++------------------------+-----+
+only showing top 20 rows
+
+-------------------------------------------
+Batch: 3
+-------------------------------------------
++------------------------+-----+
+|original_crime_type_name|count|
++------------------------+-----+
+|                     910|    2|
+|                     909|    3|
+|         Explosive Found|    1|
+|              Aided Case|    2|
+|                     800|    1|
+|                  Return|    2|
+|                     601|    5|
+|            Passing Call|    3|
+|          Person W/knife|    1|
+|                    Susp|    1|
+|            Person W/gun|    1|
+|          Meet W/citizen|    6|
+|                     Rep|    3|
+|                     853|    1|
+|                  22500f|    3|
+|         Suicide Attempt|    2|
+|                   Drums|    1|
+|      Auto Boost / Strip|    4|
+|                Reckless|    1|
+|     H&r Injury Accident|    1|
++------------------------+-----+
+only showing top 20 rows
+
+-------------------------------------------
+Batch: 4
+-------------------------------------------
++------------------------+-----+
+|original_crime_type_name|count|
++------------------------+-----+
+|                  22654e|    1|
+|                     910|    2|
+|                     909|    5|
+|         Explosive Found|    1|
+|                 Custody|    1|
+|              Aided Case|    2|
+|            Passing Call|    3|
+|          Person W/knife|    2|
+|                    Susp|    2|
+|                     Rep|    3|
+|                     853|    1|
+|                  22500f|    4|
+|         Suicide Attempt|    2|
+|            Tent W/drugs|    1|
+|                   Drums|    1|
+|                     800|    2|
+|                  Return|    2|
+|                     601|    6|
+|            Person W/gun|    3|
+|          Meet W/citizen|    7|
++------------------------+-----+
+only showing top 20 rows
+
+-------------------------------------------
+Batch: 5
+-------------------------------------------
++------------------------+-----+
+|original_crime_type_name|count|
++------------------------+-----+
+|                  22654e|    1|
+|         Explosive Found|    1|
+|              Aided Case|    2|
+|          Person Dumping|    1|
+|                     910|    2|
+|                     909|    6|
+|                 Custody|    2|
+|            Passing Call|    3|
+|          Person W/knife|    2|
+|                    Susp|    2|
+|                     Rep|    4|
+|                     853|    1|
+|                  22500f|    4|
+|         Suicide Attempt|    2|
+|            Tent W/drugs|    1|
+|                   Drums|    1|
+|                     800|    3|
+|                  Return|    3|
+|                     601|    6|
+|            Person W/gun|    3|
++------------------------+-----+
+only showing top 20 rows
+
+-------------------------------------------
+Batch: 6
+-------------------------------------------
++------------------------+-----+
+|original_crime_type_name|count|
++------------------------+-----+
+|                  22654e|    1|
+|         Explosive Found|    1|
+|              Aided Case|    2|
+|          Person Dumping|    1|
+|                     910|    2|
+|                     909|    6|
+|                 Custody|    2|
+|            Passing Call|    3|
+|          Person W/knife|    2|
+|                    Susp|    2|
+|                     Rep|    5|
+|                     853|    1|
+|                  22500f|    4|
+|         Suicide Attempt|    2|
+|            Tent W/drugs|    1|
+|                   Drums|    1|
+|                     800|    3|
+|                  Return|    3|
+|                     601|    6|
+|            Person W/gun|    3|
++------------------------+-----+
+only showing top 20 rows
+
+Traceback (most recent call last):
+  File "/vagrant/udacity_spark/data_stream.py", line 109, in <module>
+    run_spark_job(spark)
+  File "/vagrant/udacity_spark/data_stream.py", line 76, in run_spark_job
+    query.awaitTermination()
+  File "/opt/spark-2.4.3-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/sql/streaming.py", line 103, in awaitTermination
+  File "/opt/spark-2.4.3-bin-hadoop2.7/python/lib/py4j-0.10.7-src.zip/py4j/java_gateway.py", line 1255, in __call__
+  File "/opt/spark-2.4.3-bin-hadoop2.7/python/lib/py4j-0.10.7-src.zip/py4j/java_gateway.py", line 985, in send_command
+  File "/opt/spark-2.4.3-bin-hadoop2.7/python/lib/py4j-0.10.7-src.zip/py4j/java_gateway.py", line 1152, in send_command
+  File "/home/vagrant/anaconda2/lib/python2.7/socket.py", line 451, in readline
+    data = self._sock.recv(self._rbufsize)
+  File "/opt/spark-2.4.3-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/context.py", line 270, in signal_handler
+KeyboardInterrupt

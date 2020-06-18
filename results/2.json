@@ -1,0 +1,297 @@
+[
+  {
+    "id" : "51bfd6a3-6871-407c-b8b6-2fb176d0d9fa",
+    "runId" : "fad41903-d9ff-4da5-8145-1d4f179d329d",
+    "name" : null,
+    "timestamp" : "2020-06-18T00:18:20.311Z",
+    "batchId" : 1,
+    "numInputRows" : 199,
+    "inputRowsPerSecond" : 37.377911344853494,
+    "processedRowsPerSecond" : 205.36635706914345,
+    "durationMs" : {
+      "addBatch" : 768,
+      "getBatch" : 0,
+      "getEndOffset" : 0,
+      "queryPlanning" : 87,
+      "setOffsetRange" : 10,
+      "triggerExecution" : 969,
+      "walCommit" : 64
+    },
+    "stateOperators" : [ {
+      "numRowsTotal" : 78,
+      "numRowsUpdated" : 50,
+      "memoryUsedBytes" : 19286,
+      "customMetrics" : {
+        "loadedMapCacheHitCount" : 2,
+        "loadedMapCacheMissCount" : 0,
+        "stateOnCurrentVersionSizeBytes" : 15958
+      }
+    }, {
+      "numRowsTotal" : 162,
+      "numRowsUpdated" : 73,
+      "memoryUsedBytes" : 36453,
+      "customMetrics" : {
+        "loadedMapCacheHitCount" : 1,
+        "loadedMapCacheMissCount" : 0,
+        "stateOnCurrentVersionSizeBytes" : 33677
+      }
+    } ],
+    "sources" : [ {
+      "description" : "KafkaV2[Subscribe[com.udacity.sfpd.calls]]",
+      "startOffset" : {
+        "com.udacity.sfpd.calls" : {
+          "1" : 91,
+          "0" : 108
+        }
+      },
+      "endOffset" : {
+        "com.udacity.sfpd.calls" : {
+          "1" : 182,
+          "0" : 216
+        }
+      },
+      "numInputRows" : 199,
+      "inputRowsPerSecond" : 37.377911344853494,
+      "processedRowsPerSecond" : 205.36635706914345
+    } ],
+    "sink" : {
+      "description" : "org.apache.spark.sql.execution.streaming.ConsoleSinkProvider@247b72e6"
+    }
+  },  
+  {
+    "id" : "51bfd6a3-6871-407c-b8b6-2fb176d0d9fa",
+    "runId" : "fad41903-d9ff-4da5-8145-1d4f179d329d",
+    "name" : null,
+    "timestamp" : "2020-06-18T00:18:30.001Z",
+    "batchId" : 2,
+    "numInputRows" : 199,
+    "inputRowsPerSecond" : 20.536635706914346,
+    "processedRowsPerSecond" : 230.32407407407408,
+    "durationMs" : {
+      "addBatch" : 658,
+      "getBatch" : 0,
+      "getEndOffset" : 2,
+      "queryPlanning" : 115,
+      "setOffsetRange" : 21,
+      "triggerExecution" : 864,
+      "walCommit" : 37
+    },
+    "stateOperators" : [ {
+      "numRowsTotal" : 106,
+      "numRowsUpdated" : 47,
+      "memoryUsedBytes" : 26422,
+      "customMetrics" : {
+        "loadedMapCacheHitCount" : 4,
+        "loadedMapCacheMissCount" : 0,
+        "stateOnCurrentVersionSizeBytes" : 21230
+      }
+    }, {
+      "numRowsTotal" : 217,
+      "numRowsUpdated" : 55,
+      "memoryUsedBytes" : 50781,
+      "customMetrics" : {
+        "loadedMapCacheHitCount" : 2,
+        "loadedMapCacheMissCount" : 0,
+        "stateOnCurrentVersionSizeBytes" : 43565
+      }
+    } ],
+    "sources" : [ {
+      "description" : "KafkaV2[Subscribe[com.udacity.sfpd.calls]]",
+      "startOffset" : {
+        "com.udacity.sfpd.calls" : {
+          "1" : 182,
+          "0" : 216
+        }
+      },
+      "endOffset" : {
+        "com.udacity.sfpd.calls" : {
+          "1" : 273,
+          "0" : 324
+        }
+      },
+      "numInputRows" : 199,
+      "inputRowsPerSecond" : 20.536635706914346,
+      "processedRowsPerSecond" : 230.32407407407408
+    } ],
+    "sink" : {
+      "description" : "org.apache.spark.sql.execution.streaming.ConsoleSinkProvider@247b72e6"
+    }
+  },  
+  {
+    "id" : "51bfd6a3-6871-407c-b8b6-2fb176d0d9fa",
+    "runId" : "fad41903-d9ff-4da5-8145-1d4f179d329d",
+    "name" : null,
+    "timestamp" : "2020-06-18T00:18:40.001Z",
+    "batchId" : 3,
+    "numInputRows" : 199,
+    "inputRowsPerSecond" : 19.9,
+    "processedRowsPerSecond" : 253.5031847133758,
+    "durationMs" : {
+      "addBatch" : 606,
+      "getBatch" : 0,
+      "getEndOffset" : 2,
+      "queryPlanning" : 79,
+      "setOffsetRange" : 13,
+      "triggerExecution" : 785,
+      "walCommit" : 37
+    },
+    "stateOperators" : [ {
+      "numRowsTotal" : 128,
+      "numRowsUpdated" : 42,
+      "memoryUsedBytes" : 32790,
+      "customMetrics" : {
+        "loadedMapCacheHitCount" : 6,
+        "loadedMapCacheMissCount" : 0,
+        "stateOnCurrentVersionSizeBytes" : 27534
+      }
+    }, {
+      "numRowsTotal" : 266,
+      "numRowsUpdated" : 49,
+      "memoryUsedBytes" : 88965,
+      "customMetrics" : {
+        "loadedMapCacheHitCount" : 3,
+        "loadedMapCacheMissCount" : 0,
+        "stateOnCurrentVersionSizeBytes" : 52709
+      }
+    } ],
+    "sources" : [ {
+      "description" : "KafkaV2[Subscribe[com.udacity.sfpd.calls]]",
+      "startOffset" : {
+        "com.udacity.sfpd.calls" : {
+          "1" : 273,
+          "0" : 324
+        }
+      },
+      "endOffset" : {
+        "com.udacity.sfpd.calls" : {
+          "1" : 364,
+          "0" : 432
+        }
+      },
+      "numInputRows" : 199,
+      "inputRowsPerSecond" : 19.9,
+      "processedRowsPerSecond" : 253.5031847133758
+    } ],
+    "sink" : {
+      "description" : "org.apache.spark.sql.execution.streaming.ConsoleSinkProvider@247b72e6"
+    }
+  },  
+  {
+    "id" : "51bfd6a3-6871-407c-b8b6-2fb176d0d9fa",
+    "runId" : "fad41903-d9ff-4da5-8145-1d4f179d329d",
+    "name" : null,
+    "timestamp" : "2020-06-18T00:18:50.000Z",
+    "batchId" : 4,
+    "numInputRows" : 199,
+    "inputRowsPerSecond" : 19.901990199019902,
+    "processedRowsPerSecond" : 293.07805596465386,
+    "durationMs" : {
+      "addBatch" : 528,
+      "getBatch" : 0,
+      "getEndOffset" : 2,
+      "queryPlanning" : 57,
+      "setOffsetRange" : 16,
+      "triggerExecution" : 679,
+      "walCommit" : 45
+    },
+    "stateOperators" : [ {
+      "numRowsTotal" : 150,
+      "numRowsUpdated" : 51,
+      "memoryUsedBytes" : 40078,
+      "customMetrics" : {
+        "loadedMapCacheHitCount" : 8,
+        "loadedMapCacheMissCount" : 0,
+        "stateOnCurrentVersionSizeBytes" : 31998
+      }
+    }, {
+      "numRowsTotal" : 325,
+      "numRowsUpdated" : 59,
+      "memoryUsedBytes" : 77077,
+      "customMetrics" : {
+        "loadedMapCacheHitCount" : 4,
+        "loadedMapCacheMissCount" : 0,
+        "stateOnCurrentVersionSizeBytes" : 65221
+      }
+    } ],
+    "sources" : [ {
+      "description" : "KafkaV2[Subscribe[com.udacity.sfpd.calls]]",
+      "startOffset" : {
+        "com.udacity.sfpd.calls" : {
+          "1" : 364,
+          "0" : 432
+        }
+      },
+      "endOffset" : {
+        "com.udacity.sfpd.calls" : {
+          "1" : 454,
+          "0" : 541
+        }
+      },
+      "numInputRows" : 199,
+      "inputRowsPerSecond" : 19.901990199019902,
+      "processedRowsPerSecond" : 293.07805596465386
+    } ],
+    "sink" : {
+      "description" : "org.apache.spark.sql.execution.streaming.ConsoleSinkProvider@247b72e6"
+    }
+  },  
+  {
+    "id" : "51bfd6a3-6871-407c-b8b6-2fb176d0d9fa",
+    "runId" : "fad41903-d9ff-4da5-8145-1d4f179d329d",
+    "name" : null,
+    "timestamp" : "2020-06-18T00:19:00.000Z",
+    "batchId" : 5,
+    "numInputRows" : 200,
+    "inputRowsPerSecond" : 20.0,
+    "processedRowsPerSecond" : 259.40337224383916,
+    "durationMs" : {
+      "addBatch" : 631,
+      "getBatch" : 1,
+      "getEndOffset" : 0,
+      "queryPlanning" : 63,
+      "setOffsetRange" : 13,
+      "triggerExecution" : 771,
+      "walCommit" : 38
+    },
+    "stateOperators" : [ {
+      "numRowsTotal" : 162,
+      "numRowsUpdated" : 41,
+      "memoryUsedBytes" : 42398,
+      "customMetrics" : {
+        "loadedMapCacheHitCount" : 10,
+        "loadedMapCacheMissCount" : 0,
+        "stateOnCurrentVersionSizeBytes" : 33118
+      }
+    }, {
+      "numRowsTotal" : 375,
+      "numRowsUpdated" : 50,
+      "memoryUsedBytes" : 79629,
+      "customMetrics" : {
+        "loadedMapCacheHitCount" : 5,
+        "loadedMapCacheMissCount" : 0,
+        "stateOnCurrentVersionSizeBytes" : 65821
+      }
+    } ],
+    "sources" : [ {
+      "description" : "KafkaV2[Subscribe[com.udacity.sfpd.calls]]",
+      "startOffset" : {
+        "com.udacity.sfpd.calls" : {
+          "1" : 454,
+          "0" : 541
+        }
+      },
+      "endOffset" : {
+        "com.udacity.sfpd.calls" : {
+          "1" : 549,
+          "0" : 646
+        }
+      },
+      "numInputRows" : 200,
+      "inputRowsPerSecond" : 20.0,
+      "processedRowsPerSecond" : 259.40337224383916
+    } ],
+    "sink" : {
+      "description" : "org.apache.spark.sql.execution.streaming.ConsoleSinkProvider@247b72e6"
+    }
+  }
+]
